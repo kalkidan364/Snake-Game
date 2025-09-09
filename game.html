@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/game.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1><span class="snake-icon">🐍</span>The Snake Game</h1>
+      </header>
+
+      <div class="game-area">
+        <div class="canvas-container">
+          <canvas class="canvas" width="500" height="500"></canvas>
+          <div class="buttons">
+            <button id="startBtn">Start Game</button>
+            <button id="resetBtn">Reset Game</button>
+          </div>
+        </div>
+
+        <div class="game-info">
+          <div class="score-container">
+            <div class="score-title">Current Score</div>
+            <div id="score">0</div>
+          </div>
+
+          <div class="controls">
+            <h2>Controls</h2>
+            <div class="control-item">
+              <span>Move Up</span>
+              <span class="key">↑</span>
+            </div>
+            <div class="control-item">
+              <span>Move Down</span>
+              <span class="key">↓</span>
+            </div>
+            <div class="control-item">
+              <span>Move Left</span>
+              <span class="key">←</span>
+            </div>
+            <div class="control-item">
+              <span>Move Right</span>
+              <span class="key">→</span>
+            </div>
+          </div>
+
+          <div class="instructions">
+            <h2>How to Play</h2>
+            <ul class="instruction-list">
+              <li>Control the snake using arrow keys</li>
+              <li>Eat the food to grow longer</li>
+              <li>Avoid hitting the walls or yourself</li>
+              <li>Each food item increases your score</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>© 2023 Snake Game | Use arrow keys to play</p>
+      </footer>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
